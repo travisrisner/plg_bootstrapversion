@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.8" group="system" method="upgrade">
+	<name>PLG_SYSTEM_BOOTSTRAPVERSION</name>
+	<creationDate>09-10-2020</creationDate>
+	<author>Travis Risner</author>
+	<authorEmail>git@trav.dev</authorEmail>
+	<authorUrl>https://trav.dev</authorUrl>
+	<copyright>2020 Travis Risner. All Rights Reserved.</copyright>
+	<license>GNU Lesser General Public License version 3 or later</license>
+	<version>1.0.0</version>
+	<description>PLG_SYSTEM_BOOTSTRAPVERSION_XML_DESCRIPTION</description>
+
+	<scriptfile>install.php</scriptfile>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_bootstrapversion.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_bootstrapversion.sys.ini</language>
+		<language tag="en-US">en-US/en-US.plg_system_bootstrapversion.ini</language>
+		<language tag="en-US">en-US/en-US.plg_system_bootstrapversion.sys.ini</language>
+	</languages>
+
+	<files>
+		<filename plugin="bootstrapversion">bootstrapversion.php</filename>
+		<folder>language</folder>
+		<folder>folder</folder>
+	</files>
+
+</extension>
