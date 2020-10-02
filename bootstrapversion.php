@@ -28,6 +28,24 @@ class plgSystemBootstrapVersion extends CMSPlugin {
 	 * @var    CMSApplication
 	 * @since  1.0.0
 	 */
-	protected $app;
+  protected $app;
+
+  /**
+   * Document Object
+   *
+   * @var JDocument
+   */
+  protected $doc;
+
+  public function __construct() {
+    $this->app = Factory::getApplication();
+    $this->doc = Factory::getDocument();
+  }
+  
+	public function onBeforeCompileHead() {
+		if ($this->app->isAdmin()) {
+			return;
+		}
+	}  
 
 }
