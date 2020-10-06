@@ -7,7 +7,7 @@
 	<authorUrl>https://trav.dev</authorUrl>
 	<copyright>2020 Travis Risner. All Rights Reserved.</copyright>
 	<license>GNU Lesser General Public License version 3 or later</license>
-	<version>1.0.0</version>
+	<version>0.0.1</version>
 	<description>PLG_SYSTEM_BOOTSTRAPVERSION_XML_DESCRIPTION</description>
 
 	<scriptfile>install.php</scriptfile>
@@ -18,6 +18,11 @@
 		<language tag="en-US">en-US/en-US.plg_system_bootstrapversion.ini</language>
 		<language tag="en-US">en-US/en-US.plg_system_bootstrapversion.sys.ini</language>
 	</languages>
+
+  <media folder='media' destination='plg_bootstrapversion'>
+    <folder>js</folder>
+    <folder>css</folder>
+  </media>  
 
 	<files>
 		<filename plugin="bootstrapversion">bootstrapversion.php</filename>
