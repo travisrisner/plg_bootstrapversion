@@ -16,7 +16,7 @@ use Joomla\CMS\Application\CMSApplication;
 use Joomla\CMS\Plugin\CMSPlugin;
 
 /**
- * Bluewal lAssets Joomla plugin.
+ * Bootstrap Version Joomla! Plugin
  *
  * @package   plg_bootstrapversion
  * @since     1.0.0
@@ -42,6 +42,11 @@ class plgSystemBootstrapVersion extends CMSPlugin {
     $this->doc = Factory::getDocument();
   }
   
+  /**
+   * Function ran before the head of the document is compiled
+   *
+   * @return  [type]  [return description]
+   */
 	public function onBeforeCompileHead() {
 		if ($this->app->isAdmin()) {
 			return;
